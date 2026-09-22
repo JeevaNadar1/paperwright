@@ -1,0 +1,23 @@
+[
+  {"query": "draft an NDA for a contractor we're bringing on for the patalganga site", "should_trigger": true},
+  {"query": "we agreed the price on the painting job, now i need a work order that actually protects us on defects", "should_trigger": true},
+  {"query": "vendor sent their MSA, 34 pages, can you tell me what i'm walking into before i sign", "should_trigger": true},
+  {"query": "turn the accepted quote into a proper SOW with exclusions and payment milestones", "should_trigger": true},
+  {"query": "the builder still hasn't fixed the defects in 4702 and 4703. i want to send something formal this time", "should_trigger": true},
+  {"query": "whats wrong with their payment terms, 90 days from acceptance and acceptance has no deadline", "should_trigger": true},
+  {"query": "need an offer letter for a senior engineer with 4 year vesting and a 1 year cliff", "should_trigger": true},
+  {"query": "heads of terms for leasing the nerul godown to a dark store operator, 9 year term with lock in", "should_trigger": true},
+  {"query": "they marked up our agreement, show me what actually changed and which bits matter", "should_trigger": true},
+  {"query": "is a non compete even enforceable in an indian employment contract or am i wasting my time", "should_trigger": true},
+
+  {"query": "mascot quoted 1,250 per sq ft and eco space 1,180, which one should i award", "should_trigger": false},
+  {"query": "write a cold email to blinkit's real estate head about the nerul property", "should_trigger": false},
+  {"query": "build a pricing deck for the JNCB engagement with our standard branding", "should_trigger": false},
+  {"query": "reconcile the purchase register against gstr 2b for august", "should_trigger": false},
+  {"query": "make me a skill that drafts contracts", "should_trigger": false},
+  {"query": "what's a reasonable day rate to charge for an AI implementation consultant in india", "should_trigger": false},
+  {"query": "linkedin post about why most vendor contracts are badly written", "should_trigger": false},
+  {"query": "explain the difference between an indemnity and a guarantee, i'm just curious", "should_trigger": false},
+  {"query": "summarise this 40 page RFP and pull out the deliverables", "should_trigger": false},
+  {"query": "our invoice to GBTI is 45 days overdue, what's the interest we can claim under MSMED", "should_trigger": false}
+]
