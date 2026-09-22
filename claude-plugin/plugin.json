@@ -1,0 +1,15 @@
+{
+  "name": "paperwright",
+  "version": "1.0.0",
+  "description": "Draft, review and redline the binding paper in a commercial deal \u2014 SOWs, MSAs, NDAs, contractor and consultancy agreements, offer letters, work orders, lease heads of terms, MOUs, change orders, and breach or defect rectification notices \u2014 as print-ready markdown, A4 PDF or a clause-level redline.",
+  "author": {
+    "name": "Jeeva Nadar",
+    "url": "https://github.com/JeevaNadar1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude-skills",
+    "paperwright"
+  ]
+}

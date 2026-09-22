@@ -1,0 +1,9 @@
+feat: initial release of paperwright
+
+Contract and commercial document engine: draft, review, redline and notice
+modes across 13 instruments, a 27-clause library at three strength positions,
+a severity-graded review catalogue, and an India layer covering stamping,
+registration, GST, TDS, MSMED and Contract Act limits.
+
+Scripts: check_doc.py (contract linter), redline.py (clause-level diff),
+build_pdf.py (A4 PDF in the Modern Minimalist palette).

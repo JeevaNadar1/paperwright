@@ -1,0 +1,38 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Lint the skill
+        run: |
+          set -e
+          shopt -s nullglob
+          for d in skills/*/; do
+            echo "== $d"
+            python3 tools/validate_skill.py "$d" --strict
+          done
+
+      - name: Install script dependencies
+        run: pip install reportlab
+
+      - name: Smoke test the scripts
+        run: |
+          set -e
+          S=skills/paperwright
+          # Templates are all placeholders, so the linter is expected to exit 1.
+          python3 $S/scripts/check_doc.py $S/assets/templates/sow.md --type sow || true
+          python3 $S/scripts/check_doc.py $S/assets/templates/nda-mutual.md --terms
+          python3 $S/scripts/redline.py $S/assets/templates/sow.md $S/assets/templates/sow.md
+          python3 $S/scripts/build_pdf.py $S/assets/templates/sow.md --type contract --out /tmp/sow.pdf
+          test -s /tmp/sow.pdf
